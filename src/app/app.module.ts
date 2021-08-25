@@ -5,13 +5,15 @@ import { AppComponent } from './app.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { BuyNowComponent } from './buy-now/buy-now.component';
 import { DescriptionComponent } from './description/description.component';
+import { ListComponent } from './list/list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     GalleryComponent,
     BuyNowComponent,
-    DescriptionComponent
+    DescriptionComponent,
+    ListComponent
   ],
   imports: [
     BrowserModule
