@@ -8,14 +8,8 @@ import data from '../../assets/data.json';
 })
 export class GalleryComponent implements OnInit {
 
-  slides = [
-    {img: "https://via.placeholder.com/600.png/09f/fff"},
-    {img: "https://via.placeholder.com/600.png/021/fff"},
-    {img: "https://via.placeholder.com/600.png/321/fff"},
-    {img: "https://via.placeholder.com/600.png/422/fff"},
-    {img: "https://via.placeholder.com/600.png/654/fff"}
-  ];
-  slideConfig = {"slidesToShow": 4, "slidesToScroll": 4, "arrows": true, "dots": true};
+  slideConfigMain = {"slidesToShow": 1, "slidesToScroll": 1, "asNavFor": '.slider-nav'};
+  slideConfig = {"slidesToShow": 4, "slidesToScroll": 12, "arrows": true, "dots": true, "asNavFor": '.slider-for', "focusOnSelect": true};
 
 
 
