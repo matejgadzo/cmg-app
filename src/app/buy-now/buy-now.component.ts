@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import data from '../../assets/data.json'
 
 @Component({
   selector: 'app-buy-now',
@@ -6,10 +7,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./buy-now.component.css']
 })
 export class BuyNowComponent{
+  public parsedData:{id:number,value:string}[] = data;
 
-  constructor() { }
+  public alertText = this.parsedData[1].value;
+  constructor() {}
 
   buyNowAlert(event){
-    alert("Lorem ipsum dolor sit amet, consectertur adipiscing elit.");
+
+    alert(this.alertText);
+
   }
 }

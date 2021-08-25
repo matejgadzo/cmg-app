@@ -1,0 +1,22 @@
+[
+  {
+    "id": 0,
+    "value": "Lorem ipsum dolor sit amet"
+  },
+  {
+    "id": 1,
+    "value": "Lorem ipsum dolor sit amet, consectertur adipiscing elit."
+  },
+  {
+    "id": 2,
+    "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tristique augue at scelerisque viverra. Fusce nec sem in orci laoreet tristique. Etiam aliquet fringilla metus, ac luctus felis pellentesque eget. Suspendisse vulputate mi iaculis, volutpat orci ac, ullamcorper orci. Donec tincidunt eleifend erat, at sodales elit. Integer sagittis purus nec tempor sagittis."
+  },
+  {
+    "id": 3,
+    "value": "https://via.placeholder.com/400/0000FF"
+  },
+  {
+    "id": 4,
+    "value": "https://via.placeholder.com/400/00FFFF"
+  }
+]
