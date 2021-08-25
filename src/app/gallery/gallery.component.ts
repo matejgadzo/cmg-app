@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import data from '../../assets/data.json';
 
 @Component({
   selector: 'app-gallery',
@@ -12,4 +13,5 @@ export class GalleryComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  public parsedData:{id:number,value:string}[] = data;
 }
