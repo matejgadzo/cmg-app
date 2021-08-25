@@ -1,4 +1,4 @@
-<div>
+<div class="p-2 justify-content-center">
   <ngx-slick-carousel
     class="slider-for"
     #slickModal="slick-carousel"
@@ -7,17 +7,17 @@
     <div
       ngxSlickItem
       *ngFor="let i of [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]"
-      class="slider"
+      class="slider-for"
     >
       <img
-        src="{{ this.parsedData[4].value }}"
-        width="50%"
+        src="{{ this.parsedData[5].value }}"
+        width="95%"
       />
     </div>
   </ngx-slick-carousel>
 </div>
 
-<div>
+<div class="p-1">
   <ngx-slick-carousel
     class="slider-nav"
     #slickModal="slick-carousel"
@@ -26,9 +26,9 @@
     <div
       ngxSlickItem
       *ngFor="let i of [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]"
-      class="slider"
+      class="slider-nav"
     >
-      <img src="{{ this.parsedData[4].value }}" alt="" width="90%" />
+      <img src="{{ this.parsedData[5].value }}" alt="" width="90%" />
     </div>
   </ngx-slick-carousel>
 </div>

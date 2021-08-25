@@ -1,0 +1,8 @@
+.slick-prev:before,
+.slick-next:before{
+  font-family: initial !important;
+  color: red!important;
+}
+.slick-next:before{
+  color: #2f2c2c;
+}

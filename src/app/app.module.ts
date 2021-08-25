@@ -7,6 +7,7 @@ import { BuyNowComponent } from './buy-now/buy-now.component';
 import { DescriptionComponent } from './description/description.component';
 import { ListComponent } from './list/list.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { SizeChangeComponent } from './size-change/size-change.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
     GalleryComponent,
     BuyNowComponent,
     DescriptionComponent,
-    ListComponent
+    ListComponent,
+    SizeChangeComponent
   ],
   imports: [
     BrowserModule,
