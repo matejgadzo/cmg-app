@@ -1,31 +1,40 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
-import { Subscription } from 'rxjs';
+import { Component} from '@angular/core';
 import data from '../../assets/data.json';
-import { SizeService } from '../size.service';
+
 
 @Component({
   selector: 'app-gallery',
   templateUrl: './gallery.component.html',
   styleUrls: ['./gallery.component.css']
 })
-export class GalleryComponent implements OnInit, OnDestroy {
+export class GalleryComponent{
 
   public parsedData:{id:number,value:string}[] = data;
 
+  public alertText = this.parsedData[1].value;
+
   slideConfigMain = {"slidesToShow": 1, "slidesToScroll": 1, "arrows": false, "asNavFor": '.slider-nav', "infinite": false};
-  slideConfig = {"slidesToShow": 4, "slidesToScroll": 2, "asNavFor": '.slider-for', "focusOnSelect": true,  "infinite": false};
+  slideConfig = {"slidesToShow": 4, "slidesToScroll": 4, "asNavFor": '.slider-for', "focusOnSelect": true,  "infinite": false};
 
-  selectedSize: String;
-  sub: Subscription;
+  selectedSize = "14 ct";
 
-  constructor( private size: SizeService){}
+  public options = [
+    {id:1, name:"14 ct"},
+    {id:2, name:"28 ct"}
+  ];
 
-  ngOnInit() {
-    this.sub = this.size.currentSize.subscribe(size => this.selectedSize = size);
+
+  constructor(){}
+
+  onChange(changed: any){
+    this.selectedSize = changed.name;
+    console.log(changed.name);
   }
 
-  ngOnDestroy(){
-    this.sub.unsubscribe();
+
+  buyNowAlert(event){
+    alert(this.alertText);
+
   }
 
 }
