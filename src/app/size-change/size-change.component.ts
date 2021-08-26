@@ -8,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class SizeChangeComponent {
 
   constructor() { }
+  public selectedSize: String;
 
-
+  public options = [
+    {id:1, name:"14 ct"},
+    {id:2, name:"28 ct"}
+  ]
 
 }

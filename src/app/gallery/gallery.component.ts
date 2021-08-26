@@ -8,9 +8,10 @@ import data from '../../assets/data.json';
 })
 export class GalleryComponent {
 
-  slideConfigMain = {"slidesToShow": 1, "slidesToScroll": 1, "asNavFor": '.slider-nav', "infinite": false};
-  slideConfig = {"slidesToShow": 4, "slidesToScroll": 2, "arrows": true, "asNavFor": '.slider-for', "focusOnSelect": true,  "infinite": false};
+  slideConfigMain = {"slidesToShow": 1, "slidesToScroll": 1, "arrows": false, "asNavFor": '.slider-nav', "infinite": false};
+  slideConfig = {"slidesToShow": 4, "slidesToScroll": 2, "asNavFor": '.slider-for', "focusOnSelect": true,  "infinite": false};
 
+  selectedSize: String = "14 ct";
 
 
   constructor() { }

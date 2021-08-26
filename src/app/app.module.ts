@@ -8,6 +8,8 @@ import { DescriptionComponent } from './description/description.component';
 import { ListComponent } from './list/list.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { SizeChangeComponent } from './size-change/size-change.component';
+import { NgSelectModule } from '@ng-select/ng-select';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,10 @@ import { SizeChangeComponent } from './size-change/size-change.component';
   ],
   imports: [
     BrowserModule,
-    SlickCarouselModule
+    SlickCarouselModule,
+    NgSelectModule,
+    FormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
