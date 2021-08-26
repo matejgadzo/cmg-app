@@ -4,6 +4,7 @@
   [items]="options"
   placeholder= "Select size"
   bindLabel= "name"
+  (change)="onSelect(selectedSize)"
   [searchable]= false
   [(ngModel)]="selectedSize"
 >

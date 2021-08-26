@@ -10,6 +10,7 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { SizeChangeComponent } from './size-change/size-change.component';
 import { NgSelectModule } from '@ng-select/ng-select';
 import { FormsModule } from '@angular/forms';
+import { SizeService } from './size.service';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,7 @@ import { FormsModule } from '@angular/forms';
     FormsModule
 
   ],
-  providers: [],
+  providers: [SizeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
