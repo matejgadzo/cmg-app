@@ -16,14 +16,14 @@ export class GalleryComponent {
     slidesToScroll: 1,
     arrows: false,
     asNavFor: '.slider-nav',
-    infinite: false,
+    infinite: false
   };
   slideConfig = {
     slidesToShow: 4,
     slidesToScroll: 4,
     asNavFor: '.slider-for',
     focusOnSelect: true,
-    infinite: false,
+    infinite: false
   };
 
   selectedSize = '14 ct';
