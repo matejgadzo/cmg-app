@@ -1,6 +1,6 @@
 <div class="container">
   <div class="row">
-    <div class="col-6 p-2">
+    <div class="col-sm-6 p-2 order-lg-1">
       <div>
         <ngx-slick-carousel
           class="slider-for"
@@ -52,43 +52,42 @@
         </ngx-slick-carousel>
       </div>
     </div>
-    <div class="col-6 p-2">
+      <div class="col-sm-6 p-2 order-lg-2">
+        <div class="pb-1">
+          <h1>{{ this.parsedData[0].value }}</h1>
+          <p>{{ this.parsedData[2].value }}</p>
+        </div>
 
-      <div class="pb-1">
-        <h1>{{ this.parsedData[0].value }}</h1>
-        <p>{{ this.parsedData[2].value }}</p>
-      </div>
+        <div class="pb-2">
+          <h5>Size Change:</h5>
+          <ng-select
+            [items]="options"
+            placeholder="Select size"
+            bindLabel="name"
+            (change)="onChange(selectedSize)"
+            [searchable]="false"
+            [(ngModel)]="selectedSize"
+          >
+          </ng-select>
+        </div>
 
-      <div class="pb-2">
-        <h5>Size Change:</h5>
-        <ng-select
-          [items]="options"
-          placeholder="Select size"
-          bindLabel="name"
-          (change)="onChange(selectedSize)"
-          [searchable]="false"
-          [(ngModel)]="selectedSize"
-        >
-        </ng-select>
-      </div>
+        <div class="pb-2">
+          <button
+            type="button"
+            class="btn btn-secondary btn-md btn-block"
+            (click)="buyNowAlert()"
+          >
+            <span>Buy Now</span>
+          </button>
+        </div>
 
-      <div class="pb-2">
-        <button
-          type="button"
-          class="btn btn-secondary btn-md btn-block"
-          (click)="buyNowAlert($event)"
-        >
-          <span>Buy Now</span>
-        </button>
+        <div class="pt-2">
+          <ul>
+            <li *ngFor="let i of [0, 1, 2, 3, 5]">
+              {{ this.parsedData[3].value }}
+            </li>
+          </ul>
+        </div>
       </div>
-
-      <div class="pt-2">
-        <ul>
-          <li *ngFor="let i of [0, 1, 2, 3, 5]">
-            {{ this.parsedData[3].value }}
-          </li>
-        </ul>
-      </div>
-    </div>
   </div>
 </div>
